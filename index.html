@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Login Dark/Light Mode</title>
+</head>
+<body>
+    <main id="container">
+        <form id="login_form">
+            <div id="form_header">
+                <h1>Login</h1>
+                <i id="mode_icon" class="fa-sharp fa-solid fa-moon"></i> <!--adicionando função para o icone, criação de id = mode_icon-->
+            </div>
+
+            <div id="social_media"> <!--criando links para imagens-->
+                <a href="#">
+                    <img src="assets/imgs/facebook.png" alt="Facebook Logo">
+                </a>
+                <a href="#">
+                    <img src="assets/imgs/google.png" alt="Google Logo">
+                </a>
+                <a href="#">
+                    <img src="assets/imgs/github.png" alt="Github Logo">
+                </a>
+            </div>
+            <div id="inputs"> <!--adicionando entradas-->
+                <div class="input-box"> <!--classes de input-box-->
+                    <label for="name"> <!--usado label para acionar o input e quando clicar no icone tb aciona-->
+                        Name
+                        <div class="input-field"><!--icone user-->
+                            <i class="fa-solid fa-user"></i>
+                            <input type="text" id="name" name="name"> 
+                        </div>
+                    </label>
+                </div>
+                <div class="input-box"> <!--classes de input-box-->
+                    <label for="email"> <!--usado label para acionar o input e quando clicar no icone tb aciona-->
+                        E-mail
+                        <div class="input-field"><!--icone user-->
+                            <i class="fa-solid fa-envelope"></i>
+                            <input type="email" id="email" name="email"> 
+                        </div>
+                    </label>
+                </div>
+                <div class="input-box"> <!--classes de input-box-->
+                    <label for="password"> <!--usado label para acionar o input e quando clicar no icone tb aciona-->
+                        Password
+                        <div class="input-field"><!--icone envelope-->
+                            <i class="fa-solid fa-key"></i>
+                            <input type="password" id="password" name="name"> 
+                        </div>
+                    </label>
+
+                    <div id="forgot_password">
+                        <a href="#">
+                            Forgot your password?
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <button type="submit" id="login_button">
+                Login
+            </button>
+        </form>
+    </main>
+ </body>
+</html>
