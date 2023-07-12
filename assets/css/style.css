@@ -45,6 +45,21 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+}
+#form_header h1{
+    font-size: 40px;
+    position: relative;
+
+}
+#form_header h1::before{
+    position: absolute;
+    content: '';
+    width: 40%;
+    background-color: var(--color-purple-50);
+    height: 3px;
+    bottom: 10px;
+    border-radius: 5px;
 }
 #social_media img {
     width: 35px; /*altura dos icones*/
